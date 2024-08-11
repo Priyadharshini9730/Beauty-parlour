@@ -1,0 +1,513 @@
+
+/* navigation bar */
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:black;
+    margin: top 0;
+    margin-bottom: 0px;
+  
+
+  }
+  
+  .nav li {
+    float: left;
+  }
+  
+  .nav a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 25px 13px;
+    padding-left:100px;  
+    text-decoration: none;
+    font-size: 20px;
+  }
+/* .home{
+  animation-name:bc;
+  animation-duration: 2s;
+  background-image: url(/images/background.jpg);
+}
+@keyframes bc {
+  0%{
+    background-image: url(/images/bc2.jpg);
+  }
+  100%{
+    background-image: url(/images/background1.jpg);
+  }
+  
+} */
+
+/* home page text */
+#text p{
+  text-align:center;
+  padding :100px;
+  padding-top:30px;
+  padding-left:300px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:80px;
+  font-weight: 900;
+  text-shadow:2px  gray;
+  color: #E8E2D0;  
+}
+/* 2section */
+.abouth{
+  justify-content: center;
+  text-align: center;
+}
+
+#about{
+  background-color: #f2efb6;
+  margin-bottom: 0px;
+
+}
+.images2{
+  display: flex;
+  flex-direction: row;
+  background-color: #f2efb6;
+margin-bottom: 0px;
+
+}
+.images2 img{
+  border-radius: 5px;
+  margin-left: 50px;
+  height: 400px;
+  margin-top: 30px;
+}
+.images2 p{
+
+  padding:30px 30px;
+  font-size: 20px;
+  padding-top: 70px;
+  font-weight: 300;
+  margin-top:30px;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 300px;
+
+}
+
+.pic1 img{
+  width: 300px;
+  height: 300px;
+  margin-left:100px;
+  border:5px white;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.pic1 p{
+  z-index: 1;
+  font-size: 20px;
+  margin-left:150px;
+  width: 150px;
+  background-color:white;
+  margin-top: 10px;
+  padding:20px;
+  border-radius: 5px;
+  box-shadow:box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+}
+
+.pic3 p{
+  z-index: 1;
+  font-size: 20px;
+  margin-left:150px;
+  width: 150px;
+  background-color:white;
+  margin-top: 0px;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+
+.pic3 img{
+width: 300px;
+height: 300px;
+border: #C6C6C6;
+border-radius: 5px;
+margin-left: 100px;
+margin-top: 30px;
+} 
+
+
+.service{
+  width: 100%;
+}
+
+
+ 
+/* footer */
+.logo{
+  margin-left:50px;
+  margin-top: 20px;
+  color: aliceblue;
+}
+.footer{
+  width:100%;
+  height:250px;
+background-color:black;
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
+
+}
+
+.F2{
+  justify-content: flex-start;
+  display: flex;
+  color: antiquewhite;
+  flex-direction:column;
+  background-color: black;
+  list-style-type:none;;
+
+  
+}
+.foot a{
+  
+  display:flex;
+  flex-direction:column ;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 100px;
+  background-color: black;
+}
+.foot ul{
+  background-color: black;
+  list-style-type: none;
+  margin-top: 0px;
+
+}
+.f3{
+  display: flex;
+  color:white;
+  text-decoration: none;
+  flex-direction: column; 
+  background-color: black;
+  margin-right: 50px;
+}
+
+.foot1  ul li a{
+color: white;
+display: flex;
+flex-direction: column;
+font-size: 18px;
+text-decoration: none;
+list-style:none;
+}
+ .foot1 ul{
+  background-color: black;
+  list-style-type: none;
+  margin-top: 0px;
+ }
+.f1 p{
+  display: flex;
+  color:white;
+  flex-direction: column;
+  padding-top: 0px;
+}
+.f1 i{
+  color: white;
+  line-height: 2rem;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 2rem;
+}
+
+.conatiner{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* about page */
+.aboutbc{
+  background-image: url(/images/aboutbc.webp);
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutbc h1{
+font-weight: 500;
+  float:left;
+  margin-top: 100px;
+  background-color:#e3e3d9;
+  width: 280px;
+  height: 60px;
+  padding:30px;
+  border-radius: 5px;
+  margin-left: 30px;
+
+}
+.aboutbc img{
+  width: 500px;
+  float: left;
+  height: 300px;
+  margin-top: 300px;
+  opacity: 80%;
+  border-radius: 5px;
+}
+.about1 img{
+width: 800px;
+height: 500px;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+.about1{
+  display: flex;
+  flex-direction: row;
+  background-color: #C6C6C6 ;
+  margin-bottom: 0px;
+}
+.about1 h2{
+  margin-top:100px;
+margin-left: 200px;
+color: cadetblue;
+}
+ .about01 p{
+  text-align: center;
+  margin-left:130px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2rem;
+  
+} 
+.about2{
+  background-color: #C6C6C6  ;
+  height: 400px;
+  margin-bottom: 0px;
+  
+}
+.about2 img{
+  float: right;
+  width: 600px;
+  height: 400px;
+
+}
+
+.about02 h4{
+  text-align: center;
+  justify-content: center;
+  padding-top:70px;
+  font-size: 20px;
+  font-weight: 600;
+} 
+
+/* icons */
+.icon1 i{
+  color: white;
+}
+.icon1{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  line-height: 3rem;
+  margin-left: 200px;
+  border-radius: 5px;
+}
+
+/* service page */
+.servicebc1 h1{
+z-index: 1;
+text-align: center;
+justify-content: center;
+}
+.service1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ser1 img{
+  height: 400px;
+  width: 500px;
+  border-radius: 50px;
+  
+}.ser1 a{
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  border-radius: 5px;
+}
+
+
+
+
+/* facial  */
+.facial p{
+  font-size: 20px;
+  font-weight: 400;
+  background-color:#bebdac;
+  padding-left: 30px;
+  padding-top:50px;
+  width: 500px;
+  height: 400px;
+  padding-left: 30px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+
+/* contact page */
+
+.error{
+  color: red;}
+  
+.contact3{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+.contact1 h1{
+  margin-top: 0px;
+  text-align: center;
+}
+.contact1 p{
+  z-index: 1;
+  position: absolute;
+  font-size:60px;
+  font-weight:800;
+  width: 500px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  margin-top: 250px;
+  color:black;
+  background-color: #bebdac;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.contact2 img{
+  width: 250px;
+  height: 250px;
+  
+}
+.con{
+  justify-content: center;
+  align-items: center;
+  display: flexbox;
+flex-direction:column;
+margin-left:30px;
+background-color:black;
+width:600px;
+border-radius: 5px;
+color: white;
+}
+.contact3 h2{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left:200px;
+}
+.contact3 p{
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+
+  margin-top: 100px;
+  color: black;
+  border-radius: 5px;
+  box-shadow: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  ;
+}
+
+form input{
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.form{
+  width: 600px;
+  height: 500px;
+  font-size: 15px;
+  border-radius: 10px;
+ }
+
+ #contact{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+
+} 
+
+.button{
+  width: 100px;
+margin-top: 30px;
+  border-radius: 10px;
+ padding: 0.5rem 0.5rem ;
+background-color:#988558;
+color: azure;
+margin-left: 150px;
+}
+
+
+iframe{
+  width: 250px;
+  height: 250px;
+  
+}
+
+.con1{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+.con1 img{
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: 400px;
+  margin-top: 30px;
+}
+.con1 p{
+  padding:30px 30px;
+  font-size: 25px;
+  padding-top: 70px;
+  line-height: 2.5rem;;
+  font-weight: 600;
+  margin-top:30px;
+  margin-left: 30px;
+  background-color:white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 300px;
+
+}
+.contact2{
+  margin-left: 50px;
+}
+
+/* bridel */
+.b5 h1{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.images{
+  display: flex;
+  flex-direction: row;
+}
+.images1{
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+
+}

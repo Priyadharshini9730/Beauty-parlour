@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css/stylesheet.css">
+</head>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <img src="./images/logo1.png" style="width: 100px;height: 100px;float: left;margin-left: 30px;">
+        
+                <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        
+          </ul>
+        </div>
+
+
+    <div class="contact1" style="background-image: url(./images/contact1.jpg);background-size: cover;width: 100%;height: 600px;">
+        <h1>BEAUTY HEAVEN</h1>
+        <p>Find the<br> beauty in each day</p>
+    </div>
+
+<div class="con1">
+    <img src="./images/con2.jpg" alt="">
+    
+    <p>A beauty or hair salon has the objective to make clients look and feel good. This is true for any salon, so including that in a mission statement is not enough. The salon's mission statement must show what makes this salon unique, similarly to its slogan but more precise.</p>
+</div>
+    
+
+
+    <section id="contact">
+        <div class="con">
+            <div class="contact3">
+                <h2>VISITUS</h2>
+        <p> gvhhjj@gmail.com<br>
+            1234567890<br>
+            RS Puram</p></div>
+            <div class="contact2">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31331.240928832663!2d76.9309558591837!3d11.008200755903767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8591c7f4e7ba5%3A0x55632b2830cb9f8a!2sR.S.%20Puram%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1717055824466!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <img src="./images/rs.jpg" alt=""></div> 
+           
+           
+           </div>
+    <div class="form">
+            
+        <form class="form" id="form" onsubmit="return response()">
+            <h1 style="color:black;text-align: center;padding-top:0px;margin-right: 200px;">CONTACT</h1>
+    
+            <label>Name</label><br>
+            <input type="text" id="name"><br>
+            <span id="nameerror" class="error"></span><br>
+        
+            <label>Email</label><br>
+            <input type="text" id="email"><br>
+            <span id="emailerror" class="error"></span><br>
+        
+            <label>Mobile</label><br>
+            <input type="number" id="mobile"><br>
+            <span id="mobileerror" class="error"></span><br>
+
+            <label>comment</label><br>
+            <input type="text" style="width:400px;
+            height:100px;"><br>
+            
+            <button type="submit" class="button">sumbit</button>
+            </div>
+             
+        </form>
+    </section>
+
+    <section id="footer" class="footer">
+            
+        <div class="logo">
+        <img src="./images/logo1.png" style="width: 100px;height: 100px;float: left;margin-top: 30px;">
+       
+ <h4>123\567 RSpuram </h4></div>
+        
+             <div class="F2">
+             <h4 style="color: aliceblue;">QUICKLINKS</h4>
+        
+             <div class="foot">
+             <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about. html">About</a></li>
+                <li ><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    
+                </ul>
+             </div>
+
+             </div>
+             <div class="f3">
+                <h4 style="margin-left:20px;">SERVICE</h4>
+                <div class="foot1">
+                <ul>
+                    <li><a href ="facial.html" >Facial</a></li>
+                    <li> <a href="pedimimi.html">Pedicure&Manicure</a></li>
+                        <li> <a href="hairstyle.html">Hairstyle</a></li>
+                            <li>  <a href="Braidal.html" >bridal makeup </a></li>
+                                <li> <a href="Eyebrows.html">eyebrows Threading</a></li>
+            
+              
+                </ul>
+                </div>
+             </div>
+
+             <div class="f1">
+                <h4 style="color: antiquewhite;">CONTACT</h4>
+                <i class="fab fa-instagram">beauty_heaven</i><br>
+                <i class="fas fa-phone">1234567890</i><br>
+                <i class="fas fa-envelope">gvhhjj@gmail.com</i><br>
+                <i class="fas fa-map-marker">RS Puram</i>
+            </div>
+            
+             
+
+
+    </section>
+
+    
+        <script>
+            function response(){
+            var name=document.getElementById('name').value;
+            var email=document.getElementById('email').value;
+            var mobile=document.getElementById('mobile').value;
+            var Isvalid=true;
+            //name
+            if(name ===""){
+                   document.getElementById('nameerror').innerHTML="please enter the name";
+            Isvalid=false;}
+            else{
+                if(name.length<8){
+                    document.getElementById('nameerror').innerHTML="name will be must 8 char";
+                Isvalid=false;}
+                  else{
+                document.getElementById('nameerror').innerHTML="";
+            }
+    
+            }
+    
+            //email
+            if(email === ""){
+                document.getElementById('emailerror').innerHTML="please enter the email";
+                Isvalid=false;}
+                else{
+                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    document.getElementById("emailerror").innerHTML = "Invalid email format";
+                    Isvalid = false;
+                }
+                else{
+                    document.getElementById('emailerror').innerHTML="";
+                }
+             }
+              
+            
+            //mobile
+            if(mobile ===""){
+                   document.getElementById('mobileerror').innerHTML="please enter the mobile number";
+            Isvalid=false;}
+            else{
+                if(isNaN(mobile) || mobile.length !== 10){
+                    document.getElementById('mobileerror').innerHTML="mobilenumber will be must 10 numbers";
+                Isvalid=false;}
+                  else{
+                document.getElementById('mobileerror').innerHTML="";
+            }
+              
+            }
+            return Isvalid;
+        }
+        </script> 
+</body>
+</html>

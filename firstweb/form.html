@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css/style1.css">
+</head>
+<body>
+    <form id="form" class="form" onsubmit="return response()">
+
+        <div class="formController">
+            <label>Firstname</label><br>
+            <input type="text" id="firstname" ><br>
+            <span id="firsterror" class="error"></span>
+        </div>
+      
+
+
+            <label>Lastname</label><br>
+            <input type="text" id="lastname"><br>
+            <span id="lnerror" class="error"></span>
+
+            <label>Email</label><br>
+            <input type="email" id="email"><br>
+            <span id="emailerror" class="error"></span>
+
+            <label>Password</label><br>
+            <input type="password" id="password"><br>
+            <span id="passworderror" class="error"></span>
+
+            <label>Confirm Password</label><br>
+            <input type="text" id="conpassword"><br>
+            <span id="confirmpassworderror" class="error"></span>
+
+            <button type="submit" value="submit">save</button>
+
+    </form>
+    <script>
+         
+        function response(){
+            
+            var firstname=document.getElementById('firstname').value;
+            var ln=document.getElementById('lastname').value;
+            var mail=document.getElementById('email').value;
+            var p1=document.getElementById('password').value;
+            var p2=document.getElementById('conpassword').value;
+            var Isvaild=true;
+               //firstname      
+             if(firstname ===""){
+                document.getElementById('firsterror').innerHTML="please enter the firstname";
+          
+                Isvalid=false;}
+                else{
+                    document.getElementById('firsterror').innerHTML="";
+                }
+
+                //lastname
+                if(ln ===""){
+                document.getElementById('lnerror').innerHTML="please enter the lastname";
+                Isvalid=false;}
+                else{
+                    document.getElementById('lnerror').innerHTML="";
+                }
+
+                //email
+                if(mail === ""){
+                document.getElementById('emailerror').innerHTML="please enter the email";
+                Isvalid=false;}
+                else{
+                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(mail)) {
+                    document.getElementById("emailerror").innerHTML = "Invalid email format";
+                    Isvalid = false;
+                }
+                else{
+                    document.getElementById('emailerror').innerHTML="";
+                }
+             }
+
+             //password
+             if(p1===""){
+                document.getElementById("passworderror").innerHTML="please enter the password";
+                Isvalid=false; }
+                else{
+                if( p1.length>8){
+                    document.getElementById("passworderror").innerHTML="please enter 8 characters"; 
+                Isvalid=false;}
+                else{
+                    document.getElementById('passworderror').innerHTML="";
+                }
+            }
+
+            //cofirm password
+            if(p1!==p2){
+                document.getElementById('confirmpassworderror').innerHTML="please enter the correct passwaord";
+                Isvalid=false;
+            }
+            else{
+                document.getElementById('confirmpassworderror').innerHTML="";
+                
+            }
+            return Isvalid;
+            
+             }
+        
+          function SetError(input){
+const formController=input.prentElement;
+formController.classList('formController.error');
+
+                }
+             
+    </script>
+</body>
+</html>

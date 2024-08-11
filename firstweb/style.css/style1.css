@@ -1,0 +1,47 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color:cadetblue;
+    color: black;
+    width: 500px;
+    height: 600px;
+   margin-left:500px ; 
+   border-radius: 10px;
+}
+.form button{
+ padding: 0.5rem 0.5rem;
+ color:black;
+ background-color:burlywood;
+ width: 100px;
+ border-radius: 30px;
+}
+.form error{
+    color: red;
+}
+.form input{
+    margin-bottom: 10px;
+    width: 300px;
+
+}
+.formController.error input{
+    border: 1px solid red;
+}
+.priya{
+    background-color: blue;
+    animation-name: bc;
+    animation-duration:0.5s;
+}
+.priya.hover{
+    
+}
+@keyframes bc {
+0%{
+    background-color: blue;
+}
+    100%{
+        background-color: brown;
+    }
+}
